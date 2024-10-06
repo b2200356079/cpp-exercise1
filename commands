@@ -1,0 +1,7 @@
+# util_functions.cpp'yi derle
+g++ -c util_functions.cpp -o util_functions.o
+
+# main.cpp'yi derle ve util_functions.o ile bağla
+g++ main.cpp util_functions.o -o main
+
+.\main.exe
