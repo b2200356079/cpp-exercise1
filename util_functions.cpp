@@ -112,3 +112,16 @@ std::vector<int> stringToIntegerVector(const std::string& input) {
     }
 return result;
 }
+
+/**
+ * This function calculates the letter grade based on the given grade point.
+ *
+ * @param point: Grade point (float)
+ * @return: Letter grade (std::string)
+ */
+std::string calculateGrade(float point) {
+    float map_acces_index = 20 - (point / 5);
+    int units_digit = static_cast<int>(map_acces_index) % 10;
+    return letters.at(units_digit);
+
+}
